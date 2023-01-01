@@ -16,14 +16,11 @@ int main()
     //std::cout << "Hello World!\n";
     GLFWwindow* window;
     if ( !glfwInit() ) return EXIT_FAILURE_OPENGL;
-
     window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
     if (!window) { glfwTerminate(); return EXIT_FAILURE_OPENGL; }
     glfwMakeContextCurrent(window);
 
     if (glewInit() != GLEW_OK) { cout << "GLEW Error!" << endl; return EXIT_FAILURE_GLEW; } //GLEW will set only here
-
-
 
     while ( !glfwWindowShouldClose(window) )
     {
