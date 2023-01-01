@@ -12,8 +12,6 @@
 using namespace std;
 int main()
 {
-
-    //std::cout << "Hello World!\n";
     GLFWwindow* window;
     if ( !glfwInit() ) return EXIT_FAILURE_OPENGL;
     window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
@@ -21,6 +19,7 @@ int main()
     glfwMakeContextCurrent(window);
 
     if (glewInit() != GLEW_OK) { cout << "GLEW Error!" << endl; return EXIT_FAILURE_GLEW; } //GLEW will set only here
+    cout << "Gl version: " << glGetString(GL_VERSION) << endl;
 
     while ( !glfwWindowShouldClose(window) )
     {
