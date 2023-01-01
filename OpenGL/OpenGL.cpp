@@ -18,8 +18,8 @@ int main()
         glClearColor(0.0f, 0.5f, 1.0f, 0.0f);
 
         glBegin(GL_TRIANGLES);// -1 ... 1
-        glVertex2f(-0.25f, -0.5f); glVertex2f(0.25f, -0.5f);
         glVertex2f(0.0f, 0.75f);
+        glVertex2f(-0.25f, -0.5f); glVertex2f(0.25f, -0.5f);
         glEnd();
 
         glBegin(GL_TRIANGLES);
