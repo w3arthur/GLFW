@@ -21,5 +21,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="archive1.txt" />
+    <Text Include="..\archive2.txt" />
   </ItemGroup>
 </Project>
